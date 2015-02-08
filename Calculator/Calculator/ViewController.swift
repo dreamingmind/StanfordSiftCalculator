@@ -81,6 +81,12 @@ class ViewController: UIViewController {
        
     }
     
+    @IBAction func clearAll(sender: UIButton) {
+        paperTape.text = "Paper Tape"
+        display.text = "0"
+        operandStack = Array<Double>()
+    }
+
     func performOperation(operation: (Double, Double)->Double) {
         if operandStack.count >= 2 {
             displayValue = operation(operandStack.removeLast(), operandStack.removeLast())
