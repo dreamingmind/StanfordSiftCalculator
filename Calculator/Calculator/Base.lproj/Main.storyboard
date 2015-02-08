@@ -280,7 +280,7 @@ Unicode: U+23CE, UTF-8: E2 8F 8E</string>
                                 <rect key="frame" x="304" y="155" width="64" height="64"/>
                                 <color key="backgroundColor" red="0.78890297990000002" green="0.96647904039999999" blue="0.98445991850000003" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
-                                <state key="normal">
+                                <state key="normal" title="C">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -292,13 +292,10 @@ Unicode: U+23CE, UTF-8: E2 8F 8E</string>
                                 <rect key="frame" x="304" y="227" width="64" height="64"/>
                                 <color key="backgroundColor" red="0.78890297990000002" green="0.96647904039999999" blue="0.98445991850000003" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
-                                <state key="normal">
+                                <state key="normal" title="AC">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                                <connections>
-                                    <action selector="operate:" destination="BYZ-38-t0r" eventType="touchUpInside" id="89v-iY-nrm"/>
-                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Veq-fT-En2">
                                 <rect key="frame" x="304" y="299" width="64" height="64"/>
@@ -329,9 +326,6 @@ Unicode: U+23CE, UTF-8: E2 8F 8E</string>
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                                <connections>
-                                    <action selector="appendDigit:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vHO-JP-UcG"/>
-                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7ck-Ig-YaH">
                                 <rect key="frame" x="88" y="75" width="64" height="32"/>
