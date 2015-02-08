@@ -11,6 +11,9 @@ import UIKit
 class ViewController: UIViewController {
 
     @IBOutlet weak var display: UILabel!
+
+    @IBOutlet weak var paperTape: UILabel!
+
     
     var userIsTyping = false
     var inputIsInteger = true
@@ -87,6 +90,7 @@ class ViewController: UIViewController {
         operandStack.append(displayValue)
         println("\(operandStack)")
     }
+    
     
     var displayValue: Double {
         get {
