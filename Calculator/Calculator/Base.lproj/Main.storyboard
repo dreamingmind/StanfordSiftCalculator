@@ -375,10 +375,10 @@ Unicode: U+23CE, UTF-8: E2 8F 8E</string>
                                     <action selector="operate:" destination="BYZ-38-t0r" eventType="touchUpInside" id="RvJ-z2-cnZ"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FfQ-Z8-qM8">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text=" " textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FfQ-Z8-qM8">
                                 <rect key="frame" x="376" y="75" width="208" height="360"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="17"/>
+                                <color key="textColor" red="0.40215268342391308" green="0.40215268342391308" blue="0.40215268342391308" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
@@ -390,6 +390,7 @@ Unicode: U+23CE, UTF-8: E2 8F 8E</string>
                     </view>
                     <connections>
                         <outlet property="display" destination="SHU-PJ-eqk" id="CnX-ux-UbB"/>
+                        <outlet property="paperTape" destination="FfQ-Z8-qM8" id="qsX-nt-jeT"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
