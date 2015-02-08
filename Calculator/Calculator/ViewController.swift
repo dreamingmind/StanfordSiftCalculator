@@ -10,12 +10,24 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    // Top display bar showing the current input or last evaluation
     @IBOutlet weak var display: UILabel!
 
+    // History display showing past inputs, operations and results
     @IBOutlet weak var paperTape: UILabel!
 
-    
+    var tapeDisplay: String {
+        get {
+            return paperTape.text!
+        }
+        set {
+            paperTape.text = paperTape.text! + "\n" + "\(newValue)"
+        }
+    }
+
+
     var userIsTyping = false
+    
     var inputIsInteger = true
     
     @IBAction func appendDigit(sender: UIButton) {
