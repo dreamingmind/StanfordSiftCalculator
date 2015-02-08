@@ -21,8 +21,8 @@ class ViewController: UIViewController {
             return paperTape.text!
         }
         set {
-            paperTape.text = "\(displayValue)" + "\n" + paperTape.text!
-//            paperTape.text = "\(displayValue)"
+            paperTape.text = "\(newValue)" + "\n" + paperTape.text!
+//            paperTape.text = "\(newValue)"
             println(paperTape.text!)
         }
     }
@@ -66,7 +66,8 @@ class ViewController: UIViewController {
     
     @IBAction func operate(sender: UIButton) {
         let operation = sender.currentTitle!
-        if userIsTyping {
+        tapeDisplay = operation
+       if userIsTyping {
             enter()
         }
         switch operation {
@@ -79,7 +80,7 @@ class ViewController: UIViewController {
         case "cos": performOperation { cos($0) }
         default : break
         }
-        
+       
     }
     
     func performOperation(operation: (Double, Double)->Double) {
