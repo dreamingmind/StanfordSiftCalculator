@@ -13,7 +13,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var display: UILabel!
     
     var userIsTyping = false
-    var numberHasDecimalPoint = false
+    var inputIsInteger = true
     
     @IBAction func appendDigit(sender: UIButton) {
         let input = sender.currentTitle!
@@ -21,8 +21,8 @@ class ViewController: UIViewController {
         case ("0"..."9"):
             appendDigit(input)
         case ".":
-            if !numberHasDecimalPoint {
-                numberHasDecimalPoint = true
+            if inputIsInteger {
+                inputIsInteger = false
                 appendDigit(".")
             }
         case "π":
@@ -83,7 +83,7 @@ class ViewController: UIViewController {
     
     @IBAction func enter() {
         userIsTyping = false
-        numberHasDecimalPoint = false
+        inputIsInteger = true
         operandStack.append(displayValue)
         println("\(operandStack)")
     }
@@ -95,7 +95,7 @@ class ViewController: UIViewController {
         set {
             display.text = "\(newValue)"
             userIsTyping = false
-            numberHasDecimalPoint = false
+            inputIsInteger = true
         }
     }
 }
