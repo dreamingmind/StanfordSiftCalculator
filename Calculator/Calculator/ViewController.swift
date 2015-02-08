@@ -21,12 +21,10 @@ class ViewController: UIViewController {
             return paperTape.text!
         }
         set {
-            paperTape.text = "\(newValue)" + "\n" + paperTape.text!
-//            paperTape.text = "\(newValue)"
+            paperTape.text = paperTape.text! + "\n" + "\(newValue)"
             println(paperTape.text!)
         }
     }
-
 
     var userIsTyping = false
     
@@ -106,7 +104,6 @@ class ViewController: UIViewController {
         tapeDisplay = "\(operandStack.last!)"
         println("\(operandStack)")
     }
-    
     
     var displayValue: Double {
         get {
