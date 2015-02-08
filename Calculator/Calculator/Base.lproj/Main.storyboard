@@ -377,6 +377,7 @@ Unicode: U+23CE, UTF-8: E2 8F 8E</string>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Paper Tape" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FfQ-Z8-qM8">
                                 <rect key="frame" x="376" y="75" width="208" height="360"/>
+                                <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="17"/>
                                 <color key="textColor" red="0.40215268342391308" green="0.40215268342391308" blue="0.40215268342391308" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>

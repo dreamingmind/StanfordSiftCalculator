@@ -21,7 +21,9 @@ class ViewController: UIViewController {
             return paperTape.text!
         }
         set {
-            paperTape.text = paperTape.text! + "\n" + "\(newValue)"
+            paperTape.text = "\(displayValue)" + "\n" + paperTape.text!
+//            paperTape.text = "\(displayValue)"
+            println(paperTape.text!)
         }
     }
 
@@ -100,6 +102,7 @@ class ViewController: UIViewController {
         userIsTyping = false
         inputIsInteger = true
         operandStack.append(displayValue)
+        tapeDisplay = "\(operandStack.last!)"
         println("\(operandStack)")
     }
     
