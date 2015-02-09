@@ -268,12 +268,12 @@ Unicode: U+23CE, UTF-8: E2 8F 8E</string>
                                 <rect key="frame" x="350.5" y="134" width="73.5" height="34"/>
                                 <color key="backgroundColor" red="0.78890297990000002" green="0.96647904039999999" blue="0.98445991850000003" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                <state key="normal">
+                                <state key="normal" title="±">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="operate:" destination="BYZ-38-t0r" eventType="touchUpInside" id="TJC-Cc-idd"/>
+                                    <action selector="appendDigit:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tIo-Qk-c66"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r8d-ES-0Tv">

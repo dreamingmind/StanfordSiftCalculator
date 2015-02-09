@@ -55,6 +55,12 @@ class ViewController: UIViewController {
                 display.text = "0"
                 userIsTyping = false
             }
+        case "±":
+            if userIsTyping {
+                display.text = "\(displayValue * (-1) )"
+            } else {
+                operate(sender)
+            }
         default: break
         }
         
@@ -85,6 +91,7 @@ class ViewController: UIViewController {
         case "√": performOperation { sqrt($0) }
         case "sin": performOperation { sin($0) }
         case "cos": performOperation { cos($0) }
+        case "±" : performOperation { (-1) * $0 }
         default : break
         }
        
