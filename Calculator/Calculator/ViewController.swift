@@ -94,7 +94,7 @@ class ViewController: UIViewController {
         case "±" : performOperation { (-1) * $0 }
         default : break
         }
-       
+       display.text = display.text! + "="
     }
     
     @IBAction func clearAll(sender: UIButton) {
