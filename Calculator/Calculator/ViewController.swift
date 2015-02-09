@@ -21,8 +21,10 @@ class ViewController: UIViewController {
             return paperTape.text!
         }
         set {
-            paperTape.text = paperTape.text! + "\n" + "\(newValue)"
-            println(paperTape.text!)
+            if newValue != "↚" {
+                paperTape.text = paperTape.text! + "\n" + "\(newValue)"
+                println(paperTape.text!)
+            }
         }
     }
 
@@ -46,6 +48,13 @@ class ViewController: UIViewController {
             }
             appendDigit("\(M_PI)")
             enter()
+        case "↚":
+            if userIsTyping && countElements(display.text!) > 1 {
+                display.text = dropLast(display.text!)
+            } else if userIsTyping {
+                display.text = "0"
+                userIsTyping = false
+            }
         default: break
         }
         
