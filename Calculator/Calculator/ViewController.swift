@@ -57,7 +57,7 @@ class ViewController: UIViewController {
             }
         case "±":
             if userIsTyping {
-                display.text = "\(displayValue * (-1) )"
+                display.text = "\(displayValue! * (-1) )"
             } else {
                 operate(sender)
             }
@@ -122,14 +122,18 @@ class ViewController: UIViewController {
     @IBAction func enter() {
         userIsTyping = false
         inputIsInteger = true
-        operandStack.append(displayValue)
+        operandStack.append(displayValue!)
         tapeDisplay = "\(operandStack.last!)"
         println("\(operandStack)")
     }
     
-    var displayValue: Double {
+    var displayValue: Double? {
         get {
-            return NSNumberFormatter().numberFromString(display.text!)!.doubleValue
+            if let disp = NSNumberFormatter().numberFromString(display.text!) {
+                return disp.doubleValue
+            } else {
+                return 0
+            }
         }
         set {
             display.text = "\(newValue)"
